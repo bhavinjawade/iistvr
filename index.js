@@ -13,49 +13,17 @@ import Entity from 'Entity';
 
 export default class React3DView extends React.Component {
 
-  state = {
-    count: 20,
-    walk: 200,
-  };
+  // ADD STATE
 
-  _incrementCount = () => {
-    this.setState({count: this.state.count + 20});
-  };
-
-  _startwalk = () =>{
-    setInterval(this._walk, 1000);  
-  }
-
-  _walk = () =>{
-    this.setState({walk: this.state.walk - 20});
-  }
+  // ADD OTHER METHODS
   
   render() {
     return (
       <View>
-        <AmbientLight intensity={0.5} />
-        <PointLight style={{color: 'white', transform: [{translate: [0, 10, -300]}]}} />
-        <VrButton
-        onClick={this._startwalk}>
-        <Entity
-        source={{
-          obj: asset('creature.obj'),
-          mtl: asset('creature.mtl'),
-        }}
-        lit={true}
-        style={{
-          transform: [
-            {translate: [this.state.walk, -50, 200]},
-            {scale: 0.1},
-            {rotateY: 0},
-            {rotateX: -90},
-          ],
-        }}
-        />
-        </VrButton>
 
-        <VrButton
-        onClick={this._incrementCount}>
+        {/* ADD CODE FOR DINOSAUR */}
+
+        {/* ADD VRBUTTON HERE */}
         <Entity
         source={{
           obj: asset('lowpolytree.obj'),
@@ -69,8 +37,9 @@ export default class React3DView extends React.Component {
           ],
         }}
         />
-        </VrButton>
-
+        {/* ADD VRBUTTON HERE */}
+        
+{/* 
         <Entity
         source={{
           obj: asset('pyramid.obj'),
@@ -82,7 +51,7 @@ export default class React3DView extends React.Component {
             {translate: [50, -50, 400]},
           ],
         }}
-        />
+        /> */}
       </View>
     );
   }

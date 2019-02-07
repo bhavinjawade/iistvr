@@ -29,14 +29,4 @@ Make changes to work with user input
 Import a 3D Model
 
 
-state = {
-    count: 20,
-    walk: 200,
-};
 
-_incrementCount = () => {
-    this.setState({count: this.state.count + 20});
-};
-
-<VrButton
-    onClick={this._incrementCount}>
