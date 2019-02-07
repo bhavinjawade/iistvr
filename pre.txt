@@ -1,0 +1,31 @@
+Prerequisites:
+
+Install NPM:
+    Mac: On Mac, we recommend installing Node.js through Homebrew.
+    Windows: Get the Windows installer from the nodejs.org download page.
+    Linux: Go to the nodejs.org package manager page to find specific instructions for your Linux distribution.
+
+Install react 360 cli:
+    npm install -g react-360-cli
+
+
+Three files:
+
+client.js
+index.html
+index.js
+
+Go to index.js
+Explain the code
+explain view and text
+
+Now clone a github repo
+Make changes to incorporate surface and 360 image
+
+Make changes to talk about surface
+
+Make changes to work with states
+Make changes to work with user input
+Import a 3D Model
+
+
